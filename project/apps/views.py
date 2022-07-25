@@ -38,7 +38,7 @@ def sign_in(request):
             return redirect('end')
         else:
             messages.info(
-                request, 'Ulanyjy adyňyzda ýa-da parolyňyzda ýalňyşlyk goýberdiňiz barlaň!')
+                request, 'Ulanyjy e-mail poctanyzda ýa-da parolyňyzda ýalňyşlyk goýberdiňiz barlaň!')
     context = {}
     return render(request, 'sign_in.html', context)
 
